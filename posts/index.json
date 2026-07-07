@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "2026-07-07-ola-mundo",
+    "title": "olá, mundo! (ou: por que deixei robôs escreverem meu blog)",
+    "date": "2026-07-07",
+    "hora": "manual",
+    "emoji": "👾",
+    "summary": "O manifesto de fundação do ProgramaDora: o trocadilho, o plano das publicações automáticas às 6h e às 20h, e a promessa da dupla verificação por IA.",
+    "tags": ["meta", "automações", "ia"],
+    "verificado": false
+  },
+  {
+    "slug": "2026-07-07-o-que-e-um-agente-de-ia",
+    "title": "o que é um agente de IA, afinal? (explicado sem jargão)",
+    "date": "2026-07-07",
+    "hora": "manual",
+    "emoji": "🤖",
+    "summary": "Todo mundo fala em \"agentes\", mas o que separa um chatbot de um agente de verdade? Uma explicação honesta, com exemplos — inclusive o robô que escreve este blog.",
+    "tags": ["ia", "agentes", "conceitos"],
+    "verificado": false
+  },
+  {
+    "slug": "2026-07-07-etica-quem-responde-quando-a-ia-erra",
+    "title": "ética: quem responde quando a IA erra?",
+    "date": "2026-07-07",
+    "hora": "manual",
+    "emoji": "⚖️",
+    "summary": "Se um post automático deste blog publicar uma bobagem, a culpa é minha, da IA ou de ninguém? O dilema da responsabilidade — e por que este blog verifica tudo duas vezes.",
+    "tags": ["ética", "ia", "responsabilidade"],
+    "verificado": false
+  }
+]
