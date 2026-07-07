@@ -3,148 +3,304 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ProgramaDora ★ IA, automações e caos criativo</title>
-<meta name="description" content="Blog da Isadora sobre inteligência artificial, marketing online, automações, novidades e ética — com pesquisa automática verificada 2x por IA.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👾</text></svg>">
+<title>ProgramaDora — IA, marketing digital e automações, verificado 2x</title>
+<meta name="description" content="Blog da Isadora Vieira sobre inteligência artificial, marketing digital, automações e ética. Posts pesquisados e publicados automaticamente às 6h e às 20h, com dupla verificação por IA.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Shrikhand&family=Space+Grotesk:wght@400;500;700&family=VT323&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Figtree:ital,wght@0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="alternate" type="application/rss+xml" title="ProgramaDora" href="feed.xml">
 </head>
 <body>
 
-<!-- ══════════ TICKER TERMINAL ══════════ -->
-<div class="ticker" aria-hidden="true">
-  <div class="ticker__track" id="ticker-track">
-    <span>▓▒░ PROGRAMADORA v1.0 ░▒▓ &nbsp;★&nbsp; pesquisas automáticas todo dia às 06h e às 20h &nbsp;★&nbsp; tudo verificado 2x por IA &nbsp;★&nbsp; inteligência artificial • marketing online • automações • ética &nbsp;★&nbsp; melhor visualizado em qualquer resolução desde 1996 &nbsp;★&nbsp; </span>
-    <span>▓▒░ PROGRAMADORA v1.0 ░▒▓ &nbsp;★&nbsp; pesquisas automáticas todo dia às 06h e às 20h &nbsp;★&nbsp; tudo verificado 2x por IA &nbsp;★&nbsp; inteligência artificial • marketing online • automações • ética &nbsp;★&nbsp; melhor visualizado em qualquer resolução desde 1996 &nbsp;★&nbsp; </span>
+<div class="aurora" aria-hidden="true"><span></span></div>
+<div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
+<!-- ══════════ HEADER ══════════ -->
+<header class="topo">
+  <div class="topo__inner">
+    <a class="logo" href="#">programa<em>dora</em></a>
+    <nav class="topo__nav" aria-label="Navegação principal">
+      <a href="#posts">posts</a>
+      <a href="#como-funciona">como funciona</a>
+      <a href="#sobre">sobre</a>
+      <a href="#cursos">cursos</a>
+      <a href="#participe">participe</a>
+      <a href="#faq">dúvidas</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero">
+  <p class="hero__eyebrow">blog autônomo · verificado 2x por IA</p>
+  <h1 class="hero__title">
+    <span class="linha"><span>o futuro se escreve</span></span>
+    <span class="linha"><span class="grad-animado">duas vezes ao dia.</span></span>
+  </h1>
+  <p class="hero__sub"><strong>ProgramaDora</strong> — programa + Dora — é o blog da Isadora Vieira sobre
+  <strong>inteligência artificial</strong>, <strong>marketing digital</strong>, <strong>automações</strong> e
+  <strong>ética</strong>. Pesquisado, escrito e conferido por agentes de IA às 6h e às 20h. Fato sem fonte não entra.</p>
+
+  <div class="countdown" role="timer" aria-label="Tempo até a próxima edição automática">
+    <span class="countdown__label">próxima edição em</span>
+    <span class="countdown__timer" id="countdown-timer">--:--:--</span>
+    <span class="countdown__edicao" id="countdown-edicao"></span>
+  </div>
+
+  <div class="hero__acoes">
+    <a class="btn btn--primario" href="#posts" data-magnetico>ler o post de hoje</a>
+    <a class="btn" href="#como-funciona" data-magnetico>como isso funciona?</a>
+  </div>
+</section>
+
+<!-- ══════════ MARQUEE ══════════ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span><b>✦</b> inteligência artificial</span><span><b>✦</b> marketing digital</span><span><b>✦</b> automações</span><span><b>✦</b> agentes de IA</span><span><b>✦</b> ética &amp; regulação</span><span><b>✦</b> LGPD</span><span><b>✦</b> aprendizado de máquina</span><span><b>✦</b> conteúdo verificado 2x</span>
+    <span><b>✦</b> inteligência artificial</span><span><b>✦</b> marketing digital</span><span><b>✦</b> automações</span><span><b>✦</b> agentes de IA</span><span><b>✦</b> ética &amp; regulação</span><span><b>✦</b> LGPD</span><span><b>✦</b> aprendizado de máquina</span><span><b>✦</b> conteúdo verificado 2x</span>
   </div>
 </div>
 
-<!-- ══════════ HERO VAPORWAVE ══════════ -->
-<header class="hero">
-  <div class="hero__grid" aria-hidden="true"></div>
-  <div class="hero__sun" aria-hidden="true"></div>
-  <p class="hero__eyebrow blink">✦ NOVO! atualizado 2x ao dia ✦</p>
-  <h1 class="hero__logo glitch" data-text="PROGRAMADORA">
-    <span class="hero__programa">PROGRAMA</span><span class="hero__dora">DORA</span>
-  </h1>
-  <p class="hero__tagline">programação + <strong>Dora</strong> = o blog da Isadora sobre
-    <em>inteligência artificial</em>, marketing online, automações &amp; ética</p>
-  <nav class="hero__nav" aria-label="Seções">
-    <a class="btn-sticker btn-sticker--cyan" href="#posts">📰 posts</a>
-    <a class="btn-sticker btn-sticker--magenta" href="#sobre">👩‍💻 sobre</a>
-    <a class="btn-sticker btn-sticker--acid" href="#robo">🤖 como funciona</a>
-  </nav>
-</header>
+<!-- ══════════ POSTS ══════════ -->
+<section class="secao" id="posts">
+  <div class="secao__head reveal">
+    <p class="secao__eyebrow">edições</p>
+    <h2 class="secao__title">últimas publicações</h2>
+    <p class="secao__desc">Cada post nasce de pesquisa nas fontes originais e só vai ao ar depois que uma segunda IA confere fato por fato. O selo verde é a prova.</p>
+  </div>
+  <div class="feed__grid" id="feed-grid">
+    <p class="feed__loading">carregando edições…</p>
+  </div>
+</section>
 
-<!-- ══════════ CONTEÚDO ══════════ -->
-<div class="layout">
-
-  <main class="feed" id="posts">
-    <h2 class="section-title"><span>último byte</span> 💾</h2>
-    <div class="feed__grid" id="feed-grid">
-      <p class="feed__loading">carregando posts<span class="dots">...</span></p>
+<!-- ══════════ COMO FUNCIONA ══════════ -->
+<section class="secao" id="como-funciona">
+  <div class="secao__head reveal">
+    <p class="secao__eyebrow">bastidores</p>
+    <h2 class="secao__title">como um post se publica sozinho</h2>
+  </div>
+  <div class="pipeline reveal">
+    <div class="passo">
+      <h3>pesquisa</h3>
+      <p>Às 6h e às 20h, um agente de IA varre as novidades de IA, marketing e automação — priorizando fontes primárias: anúncios oficiais, papers, documentação.</p>
     </div>
-  </main>
-
-  <aside class="sidebar">
-    <div class="widget widget--counter">
-      <h3 class="widget__title">☆ contador de visitas ☆</h3>
-      <div class="counter" id="visit-counter">0000000</div>
-      <p class="widget__small">(sim, conta de verdade. no seu navegador.)</p>
+    <div class="passo">
+      <h3>escrita</h3>
+      <p>O agente escreve em português, no tom do blog, linkando a fonte de cada afirmação. Sem fonte, a frase não fica.</p>
     </div>
-
-    <div class="widget widget--construction">
-      <div class="construction-tape">🚧 EM CONSTRUÇÃO ETERNA 🚧</div>
-      <p class="widget__small">todo bom site dos anos 90 vive em construção. aqui é filosofia de vida.</p>
+    <div class="passo passo--destaque">
+      <h3>dupla verificação</h3>
+      <p>Uma segunda IA, independente, abre cada fonte e confere datas, números e nomes. Post reprovado não é publicado. Essa é a promessa da casa.</p>
     </div>
-
-    <div class="widget">
-      <h3 class="widget__title">★ selos oficiais ★</h3>
-      <div class="badges">
-        <span class="badge88 badge88--a">HTML<br>ARTESANAL</span>
-        <span class="badge88 badge88--b">MOVIDO A<br>CAFÉ ☕</span>
-        <span class="badge88 badge88--c">IA verificada<br>✔✔ 2x</span>
-        <span class="badge88 badge88--d">1024×768<br>APROVADO</span>
-        <span class="badge88 badge88--e">livre de<br>COOKIES 🍪</span>
-        <span class="badge88 badge88--f">webring<br>de 1 site</span>
-      </div>
+    <div class="passo">
+      <h3>publicação</h3>
+      <p>Aprovado, o post entra no ar com o selo <strong>✓✓ verificado 2x</strong> — e o cronômetro lá em cima reinicia para a próxima edição.</p>
     </div>
-
-    <div class="widget widget--terminal" id="robo">
-      <h3 class="widget__title widget__title--terminal">&gt; como funciona_</h3>
-      <pre class="terminal-text">
-06:00 → robô pesquisa
-        novidades de IA
-06:07 → escreve o post
-06:12 → OUTRA IA confere
-        fato por fato ✔✔
-06:15 → publica aqui
-20:00 → repete tudo</pre>
-    </div>
-
-    <div class="widget">
-      <h3 class="widget__title">☾ assine ☽</h3>
-      <p class="widget__small">novidades duas vezes ao dia, direto do futuro (ou do passado, difícil dizer com esse layout).</p>
-      <a class="btn-sticker btn-sticker--magenta btn-sticker--small" href="feed.xml">📡 RSS</a>
-    </div>
-  </aside>
-
-</div>
+  </div>
+</section>
 
 <!-- ══════════ SOBRE ══════════ -->
-<section class="sobre" id="sobre">
-  <h2 class="section-title"><span>quem programa a dora?</span> 🔮</h2>
-  <div class="sobre__card">
-    <div class="sobre__avatar" aria-hidden="true">👩‍💻</div>
-    <div>
-      <p>Oi! Eu sou a <strong>Isadora</strong> — e <strong>ProgramaDora</strong> é o trocadilho que meu nome
-      merecia: <em>programa</em> (de programação) + <em>Dora</em> (de mim) = <strong>programadora</strong>.</p>
-      <p>Aqui eu junto máquinas e curiosidade: <strong>inteligência artificial</strong>, <strong>marketing
-      online</strong>, <strong>automações</strong> que trabalham enquanto eu durmo, e as
-      <strong>implicações éticas</strong> de deixar robôs escreverem blogs (tipo este).</p>
-      <p>Aliás: boa parte dos posts é pesquisada e escrita automaticamente às 6h e às 20h — e cada um passa
-      por <strong>dupla verificação de IA</strong> antes de ir ao ar. Se a robozinha lá embaixo errar, a culpa
-      é dela. 🤖</p>
+<section class="secao" id="sobre">
+  <div class="secao__head reveal">
+    <p class="secao__eyebrow">quem programa a dora</p>
+    <h2 class="secao__title">oi, eu sou a Isadora</h2>
+  </div>
+  <div class="sobre__grid reveal">
+    <div class="sobre__foto" aria-hidden="true">IV</div>
+    <div class="sobre__texto">
+      <p><strong>Isadora Rocha Vieira</strong> — desenvolvedora front-end de Brasília, bacharela em
+      <strong>Ciência da Computação</strong>, pós-graduada em <strong>Inteligência Artificial</strong> e em
+      <strong>Marketing Digital</strong>. O nome do blog é o trocadilho que meu nome pedia:
+      <em>programa + Dora = programadora</em>.</p>
+      <p>Meu TCC da pós estudou exatamente o que este site pratica: <strong>o impacto da inteligência artificial
+      no marketing digital — benefícios, desafios e aspectos éticos</strong>. O ProgramaDora é a continuação viva
+      dessa pesquisa: um laboratório público onde agentes de IA pesquisam e publicam sob regras que eu defini,
+      com transparência sobre o que é automático e o que é humano.</p>
+      <p>Acredito que tecnologia boa é tecnologia com responsabilidade: personalização sem manipulação,
+      automação sem desinformação, IA a serviço de relações mais humanas entre marcas e pessoas.</p>
+      <div class="chips">
+        <span class="chip"><b>◆</b> ciência da computação</span>
+        <span class="chip"><b>◆</b> pós em IA</span>
+        <span class="chip"><b>◆</b> pós em marketing digital</span>
+        <span class="chip"><b>◆</b> front-end</span>
+        <span class="chip"><b>◆</b> brasília · df</span>
+      </div>
     </div>
+  </div>
+</section>
+
+<!-- ══════════ CURSOS ══════════ -->
+<section class="secao" id="cursos">
+  <div class="secao__head reveal">
+    <p class="secao__eyebrow">para estudar</p>
+    <h2 class="secao__title">cursos que eu recomendo</h2>
+    <p class="secao__desc">Seleção enxuta e gratuita (ou com opção gratuita) para quem quer entrar em IA, programação e marketing digital. Sem link de afiliado — só recomendação honesta.</p>
+  </div>
+  <div class="cursos__grid reveal">
+    <div class="curso">
+      <span class="curso__nivel">começando do zero</span>
+      <h3><a href="https://cs50.harvard.edu/x/" target="_blank" rel="noopener">CS50 — Harvard</a></h3>
+      <p>O curso introdutório de computação mais famoso do mundo, gratuito. Base sólida pra tudo que vem depois.</p>
+      <p class="curso__gratis">gratuito</p>
+    </div>
+    <div class="curso">
+      <span class="curso__nivel">programação web</span>
+      <h3><a href="https://www.freecodecamp.org/portuguese/" target="_blank" rel="noopener">freeCodeCamp</a></h3>
+      <p>HTML, CSS, JavaScript e muito mais, com certificados gratuitos e conteúdo em português.</p>
+      <p class="curso__gratis">gratuito</p>
+    </div>
+    <div class="curso">
+      <span class="curso__nivel">inteligência artificial</span>
+      <h3><a href="https://www.deeplearning.ai/" target="_blank" rel="noopener">DeepLearning.AI</a></h3>
+      <p>Do "IA para todos" a cursos curtos sobre agentes e prompts, com Andrew Ng. Vários são gratuitos.</p>
+      <p class="curso__gratis">cursos curtos gratuitos</p>
+    </div>
+    <div class="curso">
+      <span class="curso__nivel">marketing digital</span>
+      <h3><a href="https://grow.google/intl/pt-br/" target="_blank" rel="noopener">Google — Cresça com o Google</a></h3>
+      <p>Trilhas do Google em português sobre marketing digital, dados e carreira. Foi por aqui que muita gente começou.</p>
+      <p class="curso__gratis">gratuito</p>
+    </div>
+    <div class="curso">
+      <span class="curso__nivel">ia generativa na prática</span>
+      <h3><a href="https://www.anthropic.com/learn" target="_blank" rel="noopener">Anthropic Academy</a></h3>
+      <p>Material oficial da Anthropic para aprender a construir com IA e agentes — do básico ao avançado.</p>
+      <p class="curso__gratis">gratuito</p>
+    </div>
+    <div class="curso">
+      <span class="curso__nivel">dados</span>
+      <h3><a href="https://www.kaggle.com/learn" target="_blank" rel="noopener">Kaggle Learn</a></h3>
+      <p>Micro-cursos práticos de Python, machine learning e análise de dados, direto no navegador.</p>
+      <p class="curso__gratis">gratuito</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PARTICIPE ══════════ -->
+<section class="secao" id="participe">
+  <div class="participe__card reveal">
+    <div>
+      <h3>escreva com a gente ✍️</h3>
+      <p>O ProgramaDora é um laboratório aberto. Se você pesquisa, trabalha ou é simplesmente fascinade por IA,
+      marketing ou automação, pode <strong>propor um post convidado</strong>, <strong>sugerir um tema</strong>
+      para as próximas edições automáticas ou <strong>indicar um curso</strong> para a lista.</p>
+      <p>Posts de convidados passam pela mesma régua dos automáticos: toda afirmação com fonte, dupla
+      verificação antes de publicar.</p>
+    </div>
+    <form class="form" id="form-participe">
+      <div>
+        <label for="f-nome">seu nome</label>
+        <input id="f-nome" name="nome" type="text" required autocomplete="name">
+      </div>
+      <div>
+        <label for="f-tipo">o que você quer?</label>
+        <select id="f-tipo" name="tipo">
+          <option>propor um post convidado</option>
+          <option>sugerir um tema</option>
+          <option>indicar um curso</option>
+          <option>apontar um erro num post</option>
+          <option>outra coisa</option>
+        </select>
+      </div>
+      <div>
+        <label for="f-msg">sua mensagem</label>
+        <textarea id="f-msg" name="mensagem" required placeholder="conta a ideia…"></textarea>
+      </div>
+      <button class="btn btn--primario" type="submit" data-magnetico>enviar por e-mail</button>
+      <p class="form__nota">O botão abre seu aplicativo de e-mail com a mensagem pronta — nada é enviado ou
+      armazenado por este site. <a href="privacidade.html">Política de privacidade</a>.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ══════════ FAQ ══════════ -->
+<section class="secao" id="faq">
+  <div class="secao__head reveal">
+    <p class="secao__eyebrow">dúvidas</p>
+    <h2 class="secao__title">perguntas frequentes</h2>
+  </div>
+  <div class="faq reveal">
+    <details>
+      <summary>Os posts são mesmo escritos por IA?</summary>
+      <div><p>Sim — os posts marcados com <strong>✓✓ verificado 2x</strong> são pesquisados e escritos por um
+      agente de IA às 6h e às 20h, seguindo regras que a Isadora definiu. Os sem selo são escritos à mão.
+      A transparência sobre o que é automático é um princípio do site.</p></div>
+    </details>
+    <details>
+      <summary>O que significa "verificado 2x"?</summary>
+      <div><p>Depois que o primeiro agente escreve, uma <strong>segunda IA independente</strong> abre cada fonte
+      linkada e confere datas, números, nomes e afirmações. O que não tem fonte verificável é removido.
+      Se o post não passa, ele não é publicado.</p></div>
+    </details>
+    <details>
+      <summary>IA não erra? E se publicar algo falso?</summary>
+      <div><p>Erra, sim — por isso a dupla verificação existe: ela corta o tipo de erro mais perigoso, a
+      "alucinação confiante". Mas nenhum sistema é infalível. Se você encontrar um erro, use o formulário da
+      seção <a href="#participe">participe</a>: a correção é publicada e o erro, assumido.</p></div>
+    </details>
+    <details>
+      <summary>Este site usa cookies? E a LGPD?</summary>
+      <div><p>O site <strong>não usa cookies de rastreamento nem anúncios</strong>. Guardamos apenas
+      preferências no armazenamento local do seu navegador (como o aviso de cookies que você já fechou).
+      Nenhum dado seu é coletado ou enviado a servidores. Detalhes na
+      <a href="privacidade.html">política de privacidade</a>.</p></div>
+    </details>
+    <details>
+      <summary>Posso republicar ou citar os posts?</summary>
+      <div><p>Pode, com crédito e link para o post original. Se for republicar na íntegra, avisa antes pelo
+      formulário — é rápido e a resposta costuma ser sim.</p></div>
+    </details>
+    <details>
+      <summary>Como acompanho as novas edições?</summary>
+      <div><p>Pelo <a href="feed.xml">feed RSS</a> ou voltando aqui às 6h01 e às 20h01 — o cronômetro no topo
+      nunca mente. 😉</p></div>
+    </details>
   </div>
 </section>
 
 <!-- ══════════ RODAPÉ ══════════ -->
 <footer class="footer">
-  <p class="footer__marquee-ish">✧･ﾟ feito com HTML puro, café e um trocadilho ･ﾟ✧</p>
-  <p class="footer__small">© <span id="ano">2026</span> ProgramaDora — Isadora. Posts automáticos verificados 2x por IA.
-  <br>nenhum GIF de obra foi ferido na produção deste site.</p>
+  <div class="footer__inner">
+    <span class="footer__brand">programa<em class="grad-animado">dora</em></span>
+    <nav class="footer__links" aria-label="Links do rodapé">
+      <a href="#posts">posts</a>
+      <a href="#sobre">sobre</a>
+      <a href="privacidade.html">privacidade</a>
+      <a href="feed.xml">rss</a>
+    </nav>
+    <p class="footer__small">© <span id="ano">2026</span> ProgramaDora — Isadora Rocha Vieira, Brasília/DF.
+    Conteúdo automático identificado e verificado 2x por IA. Este site não coleta dados pessoais.</p>
+  </div>
 </footer>
 
-<!-- Dorinha, a mascote -->
-<div class="dorinha" id="dorinha" role="button" tabindex="0" aria-label="Dorinha, a robozinha mascote. Clique para ela falar.">
-  <div class="dorinha__bubble" id="dorinha-bubble" hidden></div>
-  <svg viewBox="0 0 32 32" width="64" height="64" shape-rendering="crispEdges" aria-hidden="true">
-    <!-- antena -->
-    <rect x="15" y="1" width="2" height="3" fill="#00f0ff"/>
-    <rect x="14" y="0" width="4" height="2" fill="#ff2ec4"/>
-    <!-- cabeça -->
-    <rect x="8" y="4" width="16" height="12" fill="#fdf6e3"/>
-    <rect x="8" y="4" width="16" height="2" fill="#ff2ec4"/>
-    <!-- olhos -->
-    <rect class="dorinha__eye" x="11" y="8" width="3" height="3" fill="#12002b"/>
-    <rect class="dorinha__eye" x="18" y="8" width="3" height="3" fill="#12002b"/>
-    <!-- boca -->
-    <rect x="13" y="13" width="6" height="1" fill="#12002b"/>
-    <!-- corpo -->
-    <rect x="10" y="17" width="12" height="9" fill="#00f0ff"/>
-    <rect x="13" y="19" width="6" height="4" fill="#12002b"/>
-    <rect x="14" y="20" width="4" height="2" fill="#c8ff00"/>
-    <!-- braços -->
-    <rect class="dorinha__arm-l" x="7" y="18" width="3" height="6" fill="#fdf6e3"/>
-    <rect class="dorinha__arm-r" x="22" y="18" width="3" height="6" fill="#fdf6e3"/>
-    <!-- pernas -->
-    <rect class="dorinha__leg-l" x="12" y="26" width="3" height="5" fill="#fdf6e3"/>
-    <rect class="dorinha__leg-r" x="17" y="26" width="3" height="5" fill="#fdf6e3"/>
-  </svg>
+<!-- ══════════ COOKIE BANNER (LGPD) ══════════ -->
+<div class="cookies" id="cookies" role="dialog" aria-label="Aviso de privacidade" hidden>
+  <p>🍪 Boas notícias: este site <strong>não usa cookies de rastreamento</strong>. Só guardamos suas
+  preferências no seu próprio navegador, como manda a <a href="privacidade.html">LGPD</a>.</p>
+  <button class="btn btn--primario" id="cookies-ok" type="button">entendi ✓</button>
 </div>
+
+<!-- ══════════ DORINHA 2.0 ══════════ -->
+<button class="dorinha" id="dorinha" type="button" aria-label="Dorinha, assistente do site. Clique para uma dica.">
+  <div class="dorinha__bubble" id="dorinha-bubble" hidden></div>
+  <svg viewBox="0 0 64 64" width="58" height="58" aria-hidden="true">
+    <defs>
+      <linearGradient id="dg" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#8b5cf6"/>
+        <stop offset="1" stop-color="#22d3ee"/>
+      </linearGradient>
+    </defs>
+    <line x1="32" y1="10" x2="32" y2="4" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="32" cy="4" r="3" fill="#fb7185"/>
+    <rect x="12" y="10" width="40" height="34" rx="14" fill="url(#dg)"/>
+    <rect x="18" y="17" width="28" height="20" rx="10" fill="#0b0817"/>
+    <circle class="dorinha__eye" cx="26" cy="27" r="3.4" fill="#22d3ee"/>
+    <circle class="dorinha__eye" cx="38" cy="27" r="3.4" fill="#22d3ee"/>
+    <rect x="20" y="48" width="24" height="9" rx="4.5" fill="url(#dg)" opacity=".75"/>
+  </svg>
+</button>
 
 <script src="js/main.js"></script>
 <script src="js/blog.js"></script>

@@ -34,7 +34,7 @@
         if (p.verificado) {
           var stamp = document.createElement('span');
           stamp.className = 'card__stamp';
-          stamp.textContent = '✔✔ verificado 2x';
+          stamp.textContent = '✓✓ verificado 2x';
           meta.appendChild(stamp);
         }
 

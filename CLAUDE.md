@@ -9,7 +9,8 @@ Blog estático em português brasileiro sobre IA, marketing online, automações
 - `posts/index.json` — índice de todos os posts (a home e o post.html dependem dele)
 - `posts/<slug>.md` — um arquivo markdown por post
 - `feed.xml` — RSS; deve ser atualizado a cada post novo
-- `css/style.css`, `js/main.js` — visual e interações; não alterar em rotinas de postagem
+- `privacidade.html` — política de privacidade (LGPD); não alterar em rotinas de postagem
+- `css/style.css`, `js/main.js`, `js/blog.js` — visual e interações; não alterar em rotinas de postagem
 
 ## Protocolo de postagem automática (rotinas das 06h e das 20h)
 
@@ -57,5 +58,5 @@ Rode uma segunda passada INDEPENDENTE de verificação (subagente ou revisão se
 - Nunca publique sem a dupla verificação completa.
 - Nunca invente notícias, citações, números ou links.
 - Nunca edite ou apague posts antigos numa rotina de postagem.
-- Nunca altere `css/`, `js/`, `index.html` ou `post.html` numa rotina de postagem.
+- Nunca altere `css/`, `js/`, `index.html`, `post.html` ou `privacidade.html` numa rotina de postagem.
 - Em caso de erro irrecuperável, não faça push parcial — deixe o repositório como estava.
