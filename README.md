@@ -1,5 +1,7 @@
 # 👾 ProgramaDora
 
+Site publicado: **https://programa-dora.vercel.app**
+
 > **programa** + **Dora** = programadora. O blog da Isadora sobre IA, marketing online, automações e ética.
 
 Site estático (HTML/CSS/JS puro, sem build) com linguagem editorial contemporânea: tipografia cinética, formas reativas, cards assimétricos e microinterações acessíveis.
