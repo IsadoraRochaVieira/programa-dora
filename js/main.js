@@ -6,6 +6,44 @@
   var reduzMovimento = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var ponteiroFino = window.matchMedia('(pointer: fine)').matches;
 
+  /* leitura da página + camadas cinéticas do hero */
+  var progresso = document.getElementById('progresso');
+  var shapes = document.querySelectorAll('.shape[data-prof]');
+  var ultimoScroll = 0;
+  function atualizaScroll() {
+    var y = window.scrollY || 0;
+    var max = document.documentElement.scrollHeight - innerHeight;
+    if (progresso) progresso.style.width = (max > 0 ? y / max * 100 : 0) + '%';
+    if (!reduzMovimento) {
+      shapes.forEach(function (s) {
+        var prof = Number(s.getAttribute('data-prof')) || 1;
+        s.style.translate = '0 ' + (y * prof * -.025) + 'px';
+      });
+    }
+    ultimoScroll = y;
+  }
+  addEventListener('scroll', atualizaScroll, { passive: true });
+  atualizaScroll();
+
+  /* título que decodifica uma vez, mantendo o texto acessível */
+  var decode = document.getElementById('decode');
+  if (decode && !reduzMovimento) {
+    var alvoDecode = decode.getAttribute('data-texto') || decode.textContent;
+    var chars = '0123456789#@%&*ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var quadro = 0;
+    var decodeTimer = setInterval(function () {
+      decode.textContent = alvoDecode.split('').map(function (letra, i) {
+        if (letra === ' ' || i < quadro / 2) return letra;
+        return chars[Math.floor(Math.random() * chars.length)];
+      }).join('');
+      quadro += 1;
+      if (quadro > alvoDecode.length * 2) {
+        clearInterval(decodeTimer);
+        decode.textContent = alvoDecode;
+      }
+    }, 38);
+  }
+
   /* ── ano do rodapé ── */
   var anoEl = document.getElementById('ano');
   if (anoEl) anoEl.textContent = new Date().getFullYear();
@@ -133,7 +171,7 @@
     'este site não te rastreia. só te informa. 🍪✖️',
     'dica: aperte ↑↑↓↓←→←→BA…',
     'o TCC da Isadora virou este blog. ciência aplicada!',
-    'volto às 6h com post novo. pontualidade britânica, alma brasiliense.'
+    'se uma edição falhar, ela não finge que publicou: segurança primeiro.'
   ];
   var falaIdx = 0, bubbleTimer = null;
 

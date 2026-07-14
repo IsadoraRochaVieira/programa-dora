@@ -4,7 +4,13 @@
   <title>ProgramaDora</title>
   <link>https://example.github.io/programadora/</link>
   <description>IA, marketing online, automações e ética — pesquisado e verificado 2x por IA, todo dia às 6h e às 20h.</description>
-  <language>pt-BR</language>
+<language>pt-BR</language>
+  <item>
+    <title>uma boa automação sabe quando não publicar</title>
+    <link>https://example.github.io/programadora/post.html?p=2026-07-14-uma-boa-automacao-sabe-quando-nao-publicar</link>
+    <pubDate>Tue, 14 Jul 2026 06:00:00 -0300</pubDate>
+    <description>Automação editorial responsável não é só publicar no horário: é pesquisar, verificar e saber interromper a edição quando as evidências não bastam.</description>
+  </item>
   <item>
     <title>olá, mundo! (ou: por que deixei robôs escreverem meu blog)</title>
     <link>https://example.github.io/programadora/post.html?p=2026-07-07-ola-mundo</link>

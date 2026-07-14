@@ -5,22 +5,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ProgramaDora — IA, marketing digital e automações, verificado 2x</title>
 <meta name="description" content="Blog da Isadora Vieira sobre inteligência artificial, marketing digital, automações e ética. Posts pesquisados e publicados automaticamente às 6h e às 20h, com dupla verificação por IA.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>✦</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Figtree:ital,wght@0,400;0,500;0,700;1,400&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 <link rel="alternate" type="application/rss+xml" title="ProgramaDora" href="feed.xml">
 </head>
 <body>
 
-<div class="aurora" aria-hidden="true"><span></span></div>
+<div class="progresso" id="progresso" aria-hidden="true"></div>
+<div class="noise" aria-hidden="true"></div>
 <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
 
 <!-- ══════════ HEADER ══════════ -->
 <header class="topo">
   <div class="topo__inner">
-    <a class="logo" href="#">programa<em>dora</em></a>
+    <a class="logo" href="#" aria-label="ProgramaDora, início"><span>programa</span><em>dora</em><i>β</i></a>
     <nav class="topo__nav" aria-label="Navegação principal">
       <a href="#posts">posts</a>
       <a href="#como-funciona">como funciona</a>
@@ -33,25 +33,40 @@
 </header>
 
 <!-- ══════════ HERO ══════════ -->
-<section class="hero">
-  <p class="hero__eyebrow">blog autônomo · verificado 2x por IA</p>
+<section class="hero" id="inicio">
+  <div class="shapes" id="shapes" aria-hidden="true">
+    <span class="shape shape--anel" data-prof="3"></span>
+    <span class="shape shape--quadrado" data-prof="5"></span>
+    <span class="shape shape--cruz" data-prof="2">+</span>
+    <span class="shape shape--tri" data-prof="4"></span>
+    <span class="shape shape--pontos" data-prof="6"></span>
+  </div>
+  <div class="hero__status reveal">
+    <span class="live-dot"></span>
+    <span>edição contínua</span>
+    <span class="hero__status-line"></span>
+    <span>Brasília · UTC−3</span>
+  </div>
+  <p class="hero__eyebrow">inteligência para gente curiosa</p>
   <h1 class="hero__title">
-    <span class="linha"><span>o futuro se escreve</span></span>
-    <span class="linha"><span class="grad-animado">duas vezes ao dia.</span></span>
+    <span class="linha"><span>tecnologia</span></span>
+    <span class="linha linha--deslocada"><span class="grad-animado" id="decode" data-texto="sem piloto automático.">sem piloto automático.</span></span>
   </h1>
-  <p class="hero__sub"><strong>ProgramaDora</strong> — programa + Dora — é o blog da Isadora Vieira sobre
-  <strong>inteligência artificial</strong>, <strong>marketing digital</strong>, <strong>automações</strong> e
-  <strong>ética</strong>. Pesquisado, escrito e conferido por agentes de IA às 6h e às 20h. Fato sem fonte não entra.</p>
+  <p class="hero__sub"><strong>ProgramaDora</strong> observa IA, marketing, automações e ética sem repetir o hype.
+  Duas edições por dia, fontes abertas e uma segunda revisão antes de qualquer post entrar no ar.</p>
 
   <div class="countdown" role="timer" aria-label="Tempo até a próxima edição automática">
-    <span class="countdown__label">próxima edição em</span>
+    <span class="countdown__label">próxima investigação</span>
     <span class="countdown__timer" id="countdown-timer">--:--:--</span>
     <span class="countdown__edicao" id="countdown-edicao"></span>
   </div>
 
   <div class="hero__acoes">
-    <a class="btn btn--primario" href="#posts" data-magnetico>ler o post de hoje</a>
-    <a class="btn" href="#como-funciona" data-magnetico>como isso funciona?</a>
+    <a class="btn btn--primario" href="#posts" data-magnetico>abrir o radar <span>↘</span></a>
+    <a class="btn" href="#como-funciona" data-magnetico>ver os bastidores</a>
+  </div>
+  <div class="hero__side" aria-hidden="true">
+    <span>IA</span><span>AUTOMAÇÃO</span><span>ÉTICA</span><span>MARKETING</span>
   </div>
 </section>
 
@@ -66,9 +81,16 @@
 <!-- ══════════ POSTS ══════════ -->
 <section class="secao" id="posts">
   <div class="secao__head reveal">
-    <p class="secao__eyebrow">edições</p>
-    <h2 class="secao__title">últimas publicações</h2>
+    <p class="secao__eyebrow">radar editorial · agora</p>
+    <h2 class="secao__title">ideias que merecem<br><em>uma segunda leitura</em></h2>
     <p class="secao__desc">Cada post nasce de pesquisa nas fontes originais e só vai ao ar depois que uma segunda IA confere fato por fato. O selo verde é a prova.</p>
+  </div>
+  <div class="feed__tools reveal" aria-label="Filtros de publicações">
+    <button class="filtro ativo" type="button" data-filter="todos">tudo</button>
+    <button class="filtro" type="button" data-filter="ia">IA</button>
+    <button class="filtro" type="button" data-filter="agentes">agentes</button>
+    <button class="filtro" type="button" data-filter="ética">ética</button>
+    <span id="feed-count" aria-live="polite"></span>
   </div>
   <div class="feed__grid" id="feed-grid">
     <p class="feed__loading">carregando edições…</p>
@@ -285,21 +307,7 @@
 <!-- ══════════ DORINHA 2.0 ══════════ -->
 <button class="dorinha" id="dorinha" type="button" aria-label="Dorinha, assistente do site. Clique para uma dica.">
   <div class="dorinha__bubble" id="dorinha-bubble" hidden></div>
-  <svg viewBox="0 0 64 64" width="58" height="58" aria-hidden="true">
-    <defs>
-      <linearGradient id="dg" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#8b5cf6"/>
-        <stop offset="1" stop-color="#22d3ee"/>
-      </linearGradient>
-    </defs>
-    <line x1="32" y1="10" x2="32" y2="4" stroke="#22d3ee" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="32" cy="4" r="3" fill="#fb7185"/>
-    <rect x="12" y="10" width="40" height="34" rx="14" fill="url(#dg)"/>
-    <rect x="18" y="17" width="28" height="20" rx="10" fill="#0b0817"/>
-    <circle class="dorinha__eye" cx="26" cy="27" r="3.4" fill="#22d3ee"/>
-    <circle class="dorinha__eye" cx="38" cy="27" r="3.4" fill="#22d3ee"/>
-    <rect x="20" y="48" width="24" height="9" rx="4.5" fill="url(#dg)" opacity=".75"/>
-  </svg>
+  <span class="dorinha__orb" aria-hidden="true"><i></i><i></i><b>D</b></span>
 </button>
 
 <script src="js/main.js"></script>

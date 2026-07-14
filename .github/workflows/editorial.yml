@@ -1,0 +1,115 @@
+name: Publicacao editorial automatica
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+      timezone: "America/Sao_Paulo"
+    - cron: "0 20 * * *"
+      timezone: "America/Sao_Paulo"
+  workflow_dispatch:
+    inputs:
+      edition:
+        description: Edicao a publicar
+        required: true
+        default: 06h
+        type: choice
+        options:
+          - 06h
+          - 20h
+
+concurrency:
+  group: programa-dora-editorial
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-5.6-terra' }}
+      SITE_URL: ${{ vars.SITE_URL }}
+
+    steps:
+      - name: Baixar a branch main
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Selecionar a edicao
+        id: edition
+        shell: bash
+        env:
+          MANUAL_EDITION: ${{ inputs.edition }}
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          if [[ -n "$MANUAL_EDITION" ]]; then
+            edition="$MANUAL_EDITION"
+          elif [[ "$SCHEDULE" == "0 6 * * *" ]]; then
+            edition="06h"
+          elif [[ "$SCHEDULE" == "0 20 * * *" ]]; then
+            edition="20h"
+          else
+            echo "Nao foi possivel identificar a edicao." >&2
+            exit 1
+          fi
+          echo "edition=$edition" >> "$GITHUB_OUTPUT"
+
+      - name: Pesquisar, escrever e verificar
+        id: editorial
+        run: python3 scripts/publish_editorial.py --edition "${{ steps.edition.outputs.edition }}"
+
+      - name: Validar os arquivos preparados
+        shell: bash
+        env:
+          POST_PATH: ${{ steps.editorial.outputs.post_path }}
+        run: |
+          python3 -m json.tool posts/index.json >/dev/null
+          python3 -c "import xml.etree.ElementTree as ET; ET.parse('feed.xml')"
+          [[ "$POST_PATH" =~ ^posts/[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9]+(-[a-z0-9]+)*\.md$ ]]
+          test -f "$POST_PATH"
+
+      - name: Commitar e publicar na main
+        shell: bash
+        env:
+          POST_PATH: ${{ steps.editorial.outputs.post_path }}
+          SLUG: ${{ steps.editorial.outputs.slug }}
+          EDITION: ${{ steps.edition.outputs.edition }}
+        run: |
+          git config user.name "ProgramaDora Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- posts/index.json feed.xml "$POST_PATH"
+          git diff --cached --quiet && { echo "Nenhuma publicacao foi gerada." >&2; exit 1; }
+          git commit -m "post: $SLUG (edicao das $EDITION)"
+          git push origin HEAD:main
+
+  deploy-pages:
+    needs: publish
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Baixar a publicacao aprovada
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Configurar o GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Preparar os arquivos estaticos
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Publicar o site
+        id: deployment
+        uses: actions/deploy-pages@v4

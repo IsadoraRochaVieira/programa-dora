@@ -1,5 +1,15 @@
 [
   {
+    "slug": "2026-07-14-uma-boa-automacao-sabe-quando-nao-publicar",
+    "title": "uma boa automação sabe quando não publicar",
+    "date": "2026-07-14",
+    "hora": "06h",
+    "emoji": "🛑",
+    "summary": "Automação editorial responsável não é só publicar no horário: é pesquisar, verificar e saber interromper a edição quando as evidências não bastam.",
+    "tags": ["automação", "ia", "ética", "bastidores"],
+    "verificado": true
+  },
+  {
     "slug": "2026-07-07-ola-mundo",
     "title": "olá, mundo! (ou: por que deixei robôs escreverem meu blog)",
     "date": "2026-07-07",

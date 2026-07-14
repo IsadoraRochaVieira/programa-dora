@@ -4,6 +4,7 @@
 
   var grid = document.getElementById('feed-grid');
   if (!grid) return;
+  var contador = document.getElementById('feed-count');
 
   function fmtData(iso) {
     var d = new Date(iso + 'T12:00:00');
@@ -18,9 +19,11 @@
     .then(function (posts) {
       posts.sort(function (a, b) { return b.date.localeCompare(a.date); });
       grid.innerHTML = '';
-      posts.forEach(function (p) {
+      posts.forEach(function (p, indice) {
         var card = document.createElement('article');
         card.className = 'card';
+        card.dataset.tags = (p.tags || []).join('|').toLocaleLowerCase('pt-BR');
+        card.style.setProperty('--ordem', indice);
 
         var meta = document.createElement('div');
         meta.className = 'card__meta';
@@ -63,6 +66,22 @@
         card.appendChild(sum);
         card.appendChild(tags);
         grid.appendChild(card);
+      });
+      if (contador) contador.textContent = posts.length + ' edições no arquivo';
+
+      document.querySelectorAll('[data-filter]').forEach(function (botao) {
+        botao.addEventListener('click', function () {
+          var filtro = botao.getAttribute('data-filter');
+          var visiveis = 0;
+          document.querySelectorAll('[data-filter]').forEach(function (b) { b.classList.remove('ativo'); });
+          botao.classList.add('ativo');
+          grid.querySelectorAll('.card').forEach(function (card) {
+            var mostrar = filtro === 'todos' || card.dataset.tags.split('|').indexOf(filtro) !== -1;
+            card.hidden = !mostrar;
+            if (mostrar) visiveis += 1;
+          });
+          if (contador) contador.textContent = visiveis + (visiveis === 1 ? ' edição' : ' edições');
+        });
       });
       if (!posts.length) {
         grid.innerHTML = '<p class="feed__loading">nenhum post ainda — a robozinha chega às 6h. ⏰</p>';
