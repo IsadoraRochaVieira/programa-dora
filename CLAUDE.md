@@ -17,9 +17,10 @@ Blog estático em português brasileiro sobre IA, marketing online, automações
 Cada rotina publica **1 post novo** seguindo estas etapas, nesta ordem:
 
 ### 1. Pesquisa
-- Busque na web novidades das últimas 24h sobre: inteligência artificial, agentes, automações, marketing com IA, ética/regulação de IA.
-- Priorize fontes primárias (anúncios oficiais, papers, docs) sobre agregadores.
-- Escolha UM tema com substância. Se nada relevante aconteceu, escreva um post evergreen (conceito, tutorial, análise) — nunca invente notícia.
+- Busque na web novidades das últimas 24h sobre os temas do blog: inteligência artificial, agentes, automações, marketing digital com IA, ética/regulação de IA, empreendedorismo/negócios com tecnologia e saúde mental de quem trabalha com tecnologia.
+- Priorize fontes primárias (anúncios oficiais, papers, docs, reguladores, órgãos de saúde) sobre agregadores.
+- Escolha UM tema com substância. Se nada relevante aconteceu, escreva um post evergreen (conceito, tutorial, análise) — pode puxar uma ideia do banco de pautas em `PAUTAS.md`. Nunca invente notícia.
+- Em temas sensíveis (ex.: saúde mental), não dê conselho clínico e cite fontes sólidas.
 
 ### 2. Escrita
 - Escreva em **português brasileiro**, tom leve e direto, na voz do blog (primeira pessoa, bem-humorado, sem hype).

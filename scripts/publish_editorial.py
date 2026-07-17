@@ -381,10 +381,27 @@ def write_transaction(files: list[tuple[Path, bytes]]) -> None:
             temp_path.unlink(missing_ok=True)
 
 
-def draft_prompt(*, now: datetime, edition: str, existing_slugs: set[str]) -> str:
+def read_pautas() -> str:
+    """Le o banco de pautas opcional (PAUTAS.md). Ausencia nao e erro."""
+    try:
+        text = (ROOT / "PAUTAS.md").read_text(encoding="utf-8").strip()
+    except OSError:
+        return ""
+    return text[:4000]
+
+
+def draft_prompt(*, now: datetime, edition: str, existing_slugs: set[str], pautas: str = "") -> str:
+    pautas_bloco = ""
+    if pautas:
+        pautas_bloco = (
+            "\n\nBanco de pautas (use apenas se nao houver novidade forte e verificavel; "
+            "escolha uma ideia que ainda nao virou post e trate como evergreen). "
+            "Ideia daqui nao dispensa fontes nem verificacao:\n"
+            f"{pautas}"
+        )
     return f"""Voce e a redatora do blog ProgramaDora, de Isadora. Data e hora editorial: {now.isoformat()}, edicao {edition}.
 
-Execute busca na web sobre novidades publicadas nas ultimas 24 horas em inteligencia artificial, agentes, automacoes, marketing com IA e etica ou regulacao de IA. Priorize fontes primarias (anuncios oficiais, documentos, papers e reguladores). Escolha um unico tema substancial. Se nao houver novidade relevante e verificavel, produza um artigo evergreen e marque topic_kind como evergreen; jamais invente uma noticia.
+Execute busca na web sobre novidades publicadas nas ultimas 24 horas nos temas do blog: inteligencia artificial, agentes, automacoes, marketing digital com IA, etica ou regulacao de IA, empreendedorismo e negocios com tecnologia, e saude mental de quem trabalha com tecnologia. Priorize fontes primarias (anuncios oficiais, documentos, papers e reguladores). Escolha um unico tema substancial. Se nao houver novidade relevante e verificavel, produza um artigo evergreen e marque topic_kind como evergreen; jamais invente uma noticia. Em temas sensiveis como saude mental, nao de conselho clinico e cite fontes solidas (por exemplo, orgaos de saude reconhecidos).{pautas_bloco}
 
 Escreva em portugues brasileiro, primeira pessoa, tom leve, direto, bem-humorado e sem hype. O markdown deve ter entre 400 e 900 palavras, comecar por '# titulo em minusculas', conter links HTTPS junto de toda afirmacao factual, terminar a secao '## fontes' com a lista de links usados e, depois, terminar com uma linha '---' seguida por uma nota em italico. O slug deve ser curto, sem data, somente ASCII minusculo, numeros e hifens. Crie 2 a 4 tags minusculas e um resumo de 1 ou 2 frases.
 
@@ -425,7 +442,7 @@ def main() -> int:
     print(f"Iniciando pesquisa e redacao da edicao das {args.edition} com {model}.")
     draft = api_response(
         model=model,
-        prompt=draft_prompt(now=now, edition=args.edition, existing_slugs=existing_slugs),
+        prompt=draft_prompt(now=now, edition=args.edition, existing_slugs=existing_slugs, pautas=read_pautas()),
         schema_name="programadora_draft",
         schema=DRAFT_SCHEMA,
     )
