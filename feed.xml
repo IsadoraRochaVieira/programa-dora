@@ -6,6 +6,216 @@
   <description>IA, marketing online, automações e ética — pesquisado e verificado 2x por IA, todo dia às 6h e às 20h.</description>
 <language>pt-BR</language>
   <item>
+    <title>acessibilidade que cabe no CSS: foco visível sem matar a estética</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-15-acessibilidade-que-cabe-no-css</link>
+    <pubDate>Mon, 23 Nov 2026 12:00:00 -0300</pubDate>
+    <description>Existe um teste de qualidade que custa poucos segundos: largue o mouse, aperte Tab e tente usar a página. Se o foco some, pula para lugares estranhos ou fica escondido atrás de um…</description>
+  </item>
+  <item>
+    <title>seu agente de IA não precisa da chave da casa inteira</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-15-agente-de-ia-com-chave-da-casa</link>
+    <pubDate>Mon, 23 Nov 2026 12:00:00 -0300</pubDate>
+    <description>Um chatbot que só conversa já pode errar. Um agente que envia e-mail, consulta arquivos, altera agenda e executa código pode errar com ferramentas na mão. A diferença não pede…</description>
+  </item>
+  <item>
+    <title>agente de IA com cinto de segurança: menos permissão, mais controle</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-15-agente-de-ia-com-cinto-de-seguranca</link>
+    <pubDate>Mon, 23 Nov 2026 12:00:00 -0300</pubDate>
+    <description>Um chatbot que responde perguntas pode errar uma frase. Um agente que lê e-mail, acessa arquivos e chama APIs pode errar uma ação. A diferença parece pequena na apresentação de…</description>
+  </item>
+  <item>
+    <title>alt text não é legenda: é uma decisão de produto</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-15-alt-texto-nao-e-legenda</link>
+    <pubDate>Mon, 23 Nov 2026 12:00:00 -0300</pubDate>
+    <description>Quando alguém pede “coloca um alt nessa imagem”, parece uma tarefa de cinco segundos. Aí nasce o clássico alt=&quot;imagem&quot;, que cumpre tabela e não ajuda ninguém. Texto alternativo não…</description>
+  </item>
+  <item>
+    <title>cache rápido sem vazar cliente</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-15-cache-rapido-sem-vazar-cliente</link>
+    <pubDate>Mon, 23 Nov 2026 12:00:00 -0300</pubDate>
+    <description>Cache deixa sites rápidos guardando respostas para reutilizá-las. Também consegue servir o painel de uma pessoa para outra quando configurado no modo “vai dar certo”. Velocidade é…</description>
+  </item>
+  <item>
+    <title>content credentials não são detector de verdade — e isso é uma boa notícia</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-15-content-credentials-nao-sao-detector-de-verdade</link>
+    <pubDate>Mon, 23 Nov 2026 12:00:00 -0300</pubDate>
+    <description>Quando uma imagem viraliza, a pergunta costuma ser “foi feita por IA?”. Parece objetiva, mas mistura várias dúvidas: quem publicou, qual ferramenta participou, houve edição e o…</description>
+  </item>
+  <item>
+    <title>core web vitals sem neurose de nota perfeita</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-15-core-web-vitals-sem-neurose</link>
+    <pubDate>Mon, 23 Nov 2026 12:00:00 -0300</pubDate>
+    <description>Existe um tipo específico de tristeza digital: passar a tarde perseguindo um 100 no Lighthouse enquanto a pessoa real ainda toca no menu e espera. A nota pode orientar, mas não é o…</description>
+  </item>
+  <item>
+    <title>antes do demo bonito, faça um eval que possa falhar</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-15-eval-de-ia-antes-do-demo</link>
+    <pubDate>Mon, 23 Nov 2026 12:00:00 -0300</pubDate>
+    <description>Uma demonstração de IA tem condições perfeitas: pergunta ensaiada, internet colaborando e ninguém procurando a exceção. Produto real recebe abreviação, ambiguidade, texto enorme,…</description>
+  </item>
+  <item>
+    <title>evals antes do deploy: como testar uma IA sem perguntar se ela “parece boa”</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-15-evals-antes-do-deploy</link>
+    <pubDate>Mon, 23 Nov 2026 12:00:00 -0300</pubDate>
+    <description>Uma aplicação com IA pode funcionar lindamente em três demonstrações e tropeçar justamente no pedido que chega de uma cliente. Isso acontece porque conversar informalmente com o…</description>
+  </item>
+  <item>
+    <title>newsletter que sabe dizer tchau</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-15-newsletter-que-sabe-dizer-tchau</link>
+    <pubDate>Mon, 23 Nov 2026 12:00:00 -0300</pubDate>
+    <description>Uma newsletter madura sabe receber e sabe deixar partir. Esconder o descadastro em cinza-claro, pedir senha ou exigir um pequeno interrogatório não salva relacionamento. Só ensina a…</description>
+  </item>
+  <item>
+    <title>observabilidade para automação sem bola de cristal</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-15-observabilidade-para-automacao-sem-bola-de-cristal</link>
+    <pubDate>Mon, 23 Nov 2026 12:00:00 -0300</pubDate>
+    <description>Automação silenciosa é maravilhosa até ficar silenciosamente errada. O formulário recebeu o cadastro, a fila engoliu a tarefa, a IA escreveu alguma coisa e o CRM continuou vazio.…</description>
+  </item>
+  <item>
+    <title>retry sem cobrar duas vezes: a automação que sabe repetir</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-15-retry-sem-cobrar-duas-vezes</link>
+    <pubDate>Mon, 23 Nov 2026 12:00:00 -0300</pubDate>
+    <description>A conexão caiu exatamente depois do clique em “pagar”. O cliente não recebeu resposta. A aplicação tenta de novo. Agora temos duas cobranças e uma equipe explicando que foi “uma…</description>
+  </item>
+  <item>
+    <title>robots.txt não é cadeado</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-15-robots-txt-nao-e-cadeado</link>
+    <pubDate>Mon, 23 Nov 2026 12:00:00 -0300</pubDate>
+    <description>Existe um arquivo pequeno que recebe responsabilidades grandes demais. Alguém coloca Disallow: /segredo/ no robots.txt, respira aliviado e imagina uma porta de aço fechando. Só que…</description>
+  </item>
+  <item>
+    <title>SEO técnico sem simpatia com robô: contexto, sitemap e canonical</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-15-seo-tecnico-sem-simpatia-com-robo</link>
+    <pubDate>Mon, 23 Nov 2026 12:00:00 -0300</pubDate>
+    <description>SEO técnico costuma chegar fantasiado de ritual: instalar um plugin, repetir uma palavra e esperar que o algoritmo se emocione. Prefiro uma pergunta menos mística: o mecanismo de…</description>
+  </item>
+  <item>
+    <title>webhook não é campainha sem olho mágico</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-15-webhook-nao-e-campainha-sem-olho-magico</link>
+    <pubDate>Mon, 23 Nov 2026 12:00:00 -0300</pubDate>
+    <description>Webhook parece simples: um serviço bate numa URL e entrega um JSON. A simplicidade termina quando esse JSON diz “pagamento aprovado” e o sistema libera um pedido. Sem verificação,…</description>
+  </item>
+  <item>
+    <title>automação para negócio de uma pessoa só: comece pelo tédio</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-09-automacao-para-negocio-de-uma-pessoa</link>
+    <pubDate>Wed, 09 Sep 2026 20:00:00 -0300</pubDate>
+    <description>Um método enxuto para escolher, medir e controlar a primeira automação de um negócio solo sem criar um novo emprego de manutenção.</description>
+  </item>
+  <item>
+    <title>revisão humana não é o botão “aprovar” com pressa</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-09-revisao-humana-nao-e-enfeite</link>
+    <pubDate>Wed, 09 Sep 2026 06:00:00 -0300</pubDate>
+    <description>Revisão humana de IA só funciona com objetivo, evidência, tempo e poder real para discordar ou interromper o sistema.</description>
+  </item>
+  <item>
+    <title>senha forte sem mitologia de caractere especial</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-08-senha-forte-sem-mito</link>
+    <pubDate>Tue, 08 Sep 2026 20:00:00 -0300</pubDate>
+    <description>Comprimento, credenciais únicas, gerenciador e autenticação adicional protegem melhor que receitas arbitrárias de símbolos.</description>
+  </item>
+  <item>
+    <title>antes de colar dados de clientes no chatbot, respira</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-08-dados-de-clientes-no-chatbot</link>
+    <pubDate>Tue, 08 Sep 2026 06:00:00 -0300</pubDate>
+    <description>Cinco perguntas ajudam pequenas empresas a avaliar finalidade, necessidade, ferramenta, acesso e incidentes antes de enviar dados pessoais à IA.</description>
+  </item>
+  <item>
+    <title>o plano de incidente que cabe numa microempresa</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-07-plano-de-incidente-para-microempresa</link>
+    <pubDate>Mon, 07 Sep 2026 20:00:00 -0300</pubDate>
+    <description>Uma folha com responsáveis, contatos, contenção, avaliação e comunicação ajuda pequenas equipes a responder a incidentes sem improvisar.</description>
+  </item>
+  <item>
+    <title>sua campanha ganhou curtidas; e daí?</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-07-metricas-de-vaidade-no-marketing</link>
+    <pubDate>Mon, 07 Sep 2026 06:00:00 -0300</pubDate>
+    <description>Curtidas e alcance ajudam no diagnóstico, mas uma campanha só ganha sentido quando as métricas se conectam a ações e resultados do negócio.</description>
+  </item>
+  <item>
+    <title>e-mail automático com consentimento não precisa ser antipático</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-06-email-automatico-com-consentimento</link>
+    <pubDate>Sun, 06 Sep 2026 20:00:00 -0300</pubDate>
+    <description>Uma régua automática começa com finalidade clara, escolha válida, registro, descadastro fácil e um fluxo que sabe parar.</description>
+  </item>
+  <item>
+    <title>o checklist antes de contratar uma ferramenta de IA</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-06-checklist-antes-de-contratar-ia</link>
+    <pubDate>Sun, 06 Sep 2026 06:00:00 -0300</pubDate>
+    <description>Cinco blocos de perguntas transformam a demonstração de um fornecedor de IA em uma avaliação real de dados, qualidade, segurança, contrato e impacto.</description>
+  </item>
+  <item>
+    <title>o golpe da voz clonada pede pressa; sua defesa pede pausa</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-05-golpe-da-voz-clonada</link>
+    <pubDate>Sat, 05 Sep 2026 20:00:00 -0300</pubDate>
+    <description>Clonagem de voz torna golpes familiares mais convincentes, mas um protocolo simples de pausa e confirmação por outro canal quebra o roteiro.</description>
+  </item>
+  <item>
+    <title>passkeys: a senha que não é senha</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-05-passkeys-a-senha-que-nao-e-senha</link>
+    <pubDate>Sat, 05 Sep 2026 06:00:00 -0300</pubDate>
+    <description>Passkeys trocam segredos digitados por chaves criptográficas e tornam o acesso mais simples e resistente a phishing.</description>
+  </item>
+  <item>
+    <title>seo para busca com IA continua começando com gente</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-04-seo-para-busca-com-ia</link>
+    <pubDate>Fri, 04 Sep 2026 20:00:00 -0300</pubDate>
+    <description>As experiências generativas mudam a busca, mas conteúdo útil, rastreável e feito para uma pergunta real continua sendo o centro do SEO.</description>
+  </item>
+  <item>
+    <title>segurança mínima para quem toca o negócio sozinho</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-04-seguranca-minima-para-solo-business</link>
+    <pubDate>Fri, 04 Sep 2026 06:00:00 -0300</pubDate>
+    <description>Contas separadas, MFA, atualizações, backups e um plano de emergência formam um começo realista para proteger um negócio de uma pessoa só.</description>
+  </item>
+  <item>
+    <title>decisão automatizada precisa de uma porta de saída</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-03-decisao-automatizada-pede-porta-de-saida</link>
+    <pubDate>Thu, 03 Sep 2026 20:00:00 -0300</pubDate>
+    <description>Quando uma automação afeta pessoas, explicação, contestação e revisão humana precisam existir como requisitos de produto.</description>
+  </item>
+  <item>
+    <title>LGPD para negócio pequeno: comece pelo mapa, não pelo susto</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-03-lgpd-para-negocio-pequeno</link>
+    <pubDate>Thu, 03 Sep 2026 06:00:00 -0300</pubDate>
+    <description>Um mapa simples de dados, acessos e responsabilidades para pequenos negócios começarem a organizar a privacidade sem juridiquês cenográfico.</description>
+  </item>
+  <item>
+    <title>alfabetização em IA é saber quando não apertar o botão</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-02-alfabetizacao-em-ia-na-pratica</link>
+    <pubDate>Wed, 02 Sep 2026 20:00:00 -0300</pubDate>
+    <description>Treinar uma equipe para IA vai além de prompts: envolve dados, contexto, limites, incidentes e decisões que não devem ser delegadas.</description>
+  </item>
+  <item>
+    <title>burnout não é badge de produtividade</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-02-burnout-nao-e-badge-de-produtividade</link>
+    <pubDate>Wed, 02 Sep 2026 06:00:00 -0300</pubDate>
+    <description>A definição da OMS ajuda a separar burnout de cansaço genérico — e a lembrar que aplicativo nenhum conserta sozinho um trabalho mal desenhado.</description>
+  </item>
+  <item>
+    <title>publipost com IA: transparência cabe antes do “ver mais”</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-01-publipost-com-ia-e-transparencia</link>
+    <pubDate>Tue, 01 Sep 2026 20:00:00 -0300</pubDate>
+    <description>Um guia direto para informar parcerias, brindes e comissões com clareza — mesmo quando a legenda ganhou ajuda de IA.</description>
+  </item>
+  <item>
+    <title>seo com IA sem virar uma fábrica de texto esquecível</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-09-01-seo-com-ia-sem-fabrica-de-texto</link>
+    <pubDate>Tue, 01 Sep 2026 06:00:00 -0300</pubDate>
+    <description>Como usar IA no conteúdo sem cair na produção em escala que repete palavras, ocupa o índice e não resolve a dúvida de ninguém.</description>
+  </item>
+  <item>
+    <title>prompt injection: quando a IA obedece ao bilhete errado</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-08-31-prompt-injection-sem-magia</link>
+    <pubDate>Mon, 31 Aug 2026 20:00:00 -0300</pubDate>
+    <description>Prompt injection não se resolve com uma frase mágica: exige privilégios mínimos, validação, testes e aprovação humana nas ações sensíveis.</description>
+  </item>
+  <item>
+    <title>um mapa de risco para usar IA sem depender de sorte</title>
+    <link>https://programa-dora.vercel.app/post.html?p=2026-08-31-mapa-de-risco-para-ia</link>
+    <pubDate>Mon, 31 Aug 2026 06:00:00 -0300</pubDate>
+    <description>Um roteiro prático inspirado no NIST para mapear, medir, governar e administrar riscos antes de colocar uma automação com IA para trabalhar.</description>
+  </item>
+  <item>
     <title>kimi k3: o maior modelo aberto já lançado (e o susto que ele deu no mercado)</title>
     <link>https://programa-dora.vercel.app/post.html?p=2026-07-17-kimi-k3-o-maior-modelo-aberto-ja-lancado</link>
     <pubDate>Thu, 17 Jul 2026 20:00:00 -0300</pubDate>

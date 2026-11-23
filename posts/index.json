@@ -1,12 +1,508 @@
 [
   {
+    "slug": "2026-09-15-acessibilidade-que-cabe-no-css",
+    "title": "acessibilidade que cabe no CSS: foco visível sem matar a estética",
+    "date": "2026-11-23",
+    "hora": "manual",
+    "emoji": "⌨️",
+    "summary": "Existe um teste de qualidade que custa poucos segundos: largue o mouse, aperte Tab e tente usar a página. Se o foco some, pula para lugares estranhos ou fica escondido atrás de um…",
+    "tags": [
+      "acessibilidade",
+      "css",
+      "frontend"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-15-agente-de-ia-com-chave-da-casa",
+    "title": "seu agente de IA não precisa da chave da casa inteira",
+    "date": "2026-11-23",
+    "hora": "manual",
+    "emoji": "🔑",
+    "summary": "Um chatbot que só conversa já pode errar. Um agente que envia e-mail, consulta arquivos, altera agenda e executa código pode errar com ferramentas na mão. A diferença não pede…",
+    "tags": [
+      "ia",
+      "agentes",
+      "segurança"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-15-agente-de-ia-com-cinto-de-seguranca",
+    "title": "agente de IA com cinto de segurança: menos permissão, mais controle",
+    "date": "2026-11-23",
+    "hora": "manual",
+    "emoji": "🛡️",
+    "summary": "Um chatbot que responde perguntas pode errar uma frase. Um agente que lê e-mail, acessa arquivos e chama APIs pode errar uma ação. A diferença parece pequena na apresentação de…",
+    "tags": [
+      "ia",
+      "agentes",
+      "governança"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-15-alt-texto-nao-e-legenda",
+    "title": "alt text não é legenda: é uma decisão de produto",
+    "date": "2026-11-23",
+    "hora": "manual",
+    "emoji": "🖼️",
+    "summary": "Quando alguém pede “coloca um alt nessa imagem”, parece uma tarefa de cinco segundos. Aí nasce o clássico alt=\"imagem\", que cumpre tabela e não ajuda ninguém. Texto alternativo não…",
+    "tags": [
+      "acessibilidade",
+      "conteúdo",
+      "web design"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-15-cache-rapido-sem-vazar-cliente",
+    "title": "cache rápido sem vazar cliente",
+    "date": "2026-11-23",
+    "hora": "manual",
+    "emoji": "⚡",
+    "summary": "Cache deixa sites rápidos guardando respostas para reutilizá-las. Também consegue servir o painel de uma pessoa para outra quando configurado no modo “vai dar certo”. Velocidade é…",
+    "tags": [
+      "performance",
+      "segurança",
+      "web"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-15-content-credentials-nao-sao-detector-de-verdade",
+    "title": "content credentials não são detector de verdade — e isso é uma boa notícia",
+    "date": "2026-11-23",
+    "hora": "manual",
+    "emoji": "🧾",
+    "summary": "Quando uma imagem viraliza, a pergunta costuma ser “foi feita por IA?”. Parece objetiva, mas mistura várias dúvidas: quem publicou, qual ferramenta participou, houve edição e o…",
+    "tags": [
+      "ia",
+      "proveniência",
+      "ética"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-15-core-web-vitals-sem-neurose",
+    "title": "core web vitals sem neurose de nota perfeita",
+    "date": "2026-11-23",
+    "hora": "manual",
+    "emoji": "📈",
+    "summary": "Existe um tipo específico de tristeza digital: passar a tarde perseguindo um 100 no Lighthouse enquanto a pessoa real ainda toca no menu e espera. A nota pode orientar, mas não é o…",
+    "tags": [
+      "performance",
+      "frontend",
+      "métricas"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-15-eval-de-ia-antes-do-demo",
+    "title": "antes do demo bonito, faça um eval que possa falhar",
+    "date": "2026-11-23",
+    "hora": "manual",
+    "emoji": "🧪",
+    "summary": "Uma demonstração de IA tem condições perfeitas: pergunta ensaiada, internet colaborando e ninguém procurando a exceção. Produto real recebe abreviação, ambiguidade, texto enorme,…",
+    "tags": [
+      "ia",
+      "testes",
+      "produto"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-15-evals-antes-do-deploy",
+    "title": "evals antes do deploy: como testar uma IA sem perguntar se ela “parece boa”",
+    "date": "2026-11-23",
+    "hora": "manual",
+    "emoji": "📋",
+    "summary": "Uma aplicação com IA pode funcionar lindamente em três demonstrações e tropeçar justamente no pedido que chega de uma cliente. Isso acontece porque conversar informalmente com o…",
+    "tags": [
+      "ia",
+      "avaliação",
+      "produto"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-15-newsletter-que-sabe-dizer-tchau",
+    "title": "newsletter que sabe dizer tchau",
+    "date": "2026-11-23",
+    "hora": "manual",
+    "emoji": "✉️",
+    "summary": "Uma newsletter madura sabe receber e sabe deixar partir. Esconder o descadastro em cinza-claro, pedir senha ou exigir um pequeno interrogatório não salva relacionamento. Só ensina a…",
+    "tags": [
+      "marketing",
+      "email",
+      "automação"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-15-observabilidade-para-automacao-sem-bola-de-cristal",
+    "title": "observabilidade para automação sem bola de cristal",
+    "date": "2026-11-23",
+    "hora": "manual",
+    "emoji": "🔭",
+    "summary": "Automação silenciosa é maravilhosa até ficar silenciosamente errada. O formulário recebeu o cadastro, a fila engoliu a tarefa, a IA escreveu alguma coisa e o CRM continuou vazio.…",
+    "tags": [
+      "automação",
+      "observabilidade",
+      "devops"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-15-retry-sem-cobrar-duas-vezes",
+    "title": "retry sem cobrar duas vezes: a automação que sabe repetir",
+    "date": "2026-11-23",
+    "hora": "manual",
+    "emoji": "🔁",
+    "summary": "A conexão caiu exatamente depois do clique em “pagar”. O cliente não recebeu resposta. A aplicação tenta de novo. Agora temos duas cobranças e uma equipe explicando que foi “uma…",
+    "tags": [
+      "automação",
+      "apis",
+      "resiliência"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-15-robots-txt-nao-e-cadeado",
+    "title": "robots.txt não é cadeado",
+    "date": "2026-11-23",
+    "hora": "manual",
+    "emoji": "🤖",
+    "summary": "Existe um arquivo pequeno que recebe responsabilidades grandes demais. Alguém coloca Disallow: /segredo/ no robots.txt, respira aliviado e imagina uma porta de aço fechando. Só que…",
+    "tags": [
+      "seo",
+      "segurança",
+      "web"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-15-seo-tecnico-sem-simpatia-com-robo",
+    "title": "SEO técnico sem simpatia com robô: contexto, sitemap e canonical",
+    "date": "2026-11-23",
+    "hora": "manual",
+    "emoji": "🔎",
+    "summary": "SEO técnico costuma chegar fantasiado de ritual: instalar um plugin, repetir uma palavra e esperar que o algoritmo se emocione. Prefiro uma pergunta menos mística: o mecanismo de…",
+    "tags": [
+      "seo",
+      "web",
+      "conteúdo"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-15-webhook-nao-e-campainha-sem-olho-magico",
+    "title": "webhook não é campainha sem olho mágico",
+    "date": "2026-11-23",
+    "hora": "manual",
+    "emoji": "🔔",
+    "summary": "Webhook parece simples: um serviço bate numa URL e entrega um JSON. A simplicidade termina quando esse JSON diz “pagamento aprovado” e o sistema libera um pedido. Sem verificação,…",
+    "tags": [
+      "apis",
+      "segurança",
+      "webhooks"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-09-automacao-para-negocio-de-uma-pessoa",
+    "title": "automação para negócio de uma pessoa só: comece pelo tédio",
+    "date": "2026-09-09",
+    "hora": "20h",
+    "emoji": "⚙️",
+    "summary": "Um método enxuto para escolher, medir e controlar a primeira automação de um negócio solo sem criar um novo emprego de manutenção.",
+    "tags": [
+      "automação",
+      "empreendedorismo",
+      "negócios"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-09-revisao-humana-nao-e-enfeite",
+    "title": "revisão humana não é o botão “aprovar” com pressa",
+    "date": "2026-09-09",
+    "hora": "06h",
+    "emoji": "👀",
+    "summary": "Revisão humana de IA só funciona com objetivo, evidência, tempo e poder real para discordar ou interromper o sistema.",
+    "tags": [
+      "ia",
+      "ética",
+      "governança"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-08-senha-forte-sem-mito",
+    "title": "senha forte sem mitologia de caractere especial",
+    "date": "2026-09-08",
+    "hora": "20h",
+    "emoji": "🔑",
+    "summary": "Comprimento, credenciais únicas, gerenciador e autenticação adicional protegem melhor que receitas arbitrárias de símbolos.",
+    "tags": [
+      "segurança",
+      "produtividade",
+      "negócios"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-08-dados-de-clientes-no-chatbot",
+    "title": "antes de colar dados de clientes no chatbot, respira",
+    "date": "2026-09-08",
+    "hora": "06h",
+    "emoji": "🔐",
+    "summary": "Cinco perguntas ajudam pequenas empresas a avaliar finalidade, necessidade, ferramenta, acesso e incidentes antes de enviar dados pessoais à IA.",
+    "tags": [
+      "privacidade",
+      "lgpd",
+      "ia"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-07-plano-de-incidente-para-microempresa",
+    "title": "o plano de incidente que cabe numa microempresa",
+    "date": "2026-09-07",
+    "hora": "20h",
+    "emoji": "🚨",
+    "summary": "Uma folha com responsáveis, contatos, contenção, avaliação e comunicação ajuda pequenas equipes a responder a incidentes sem improvisar.",
+    "tags": [
+      "segurança",
+      "lgpd",
+      "negócios"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-07-metricas-de-vaidade-no-marketing",
+    "title": "sua campanha ganhou curtidas; e daí?",
+    "date": "2026-09-07",
+    "hora": "06h",
+    "emoji": "📊",
+    "summary": "Curtidas e alcance ajudam no diagnóstico, mas uma campanha só ganha sentido quando as métricas se conectam a ações e resultados do negócio.",
+    "tags": [
+      "marketing",
+      "métricas",
+      "analytics"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-06-email-automatico-com-consentimento",
+    "title": "e-mail automático com consentimento não precisa ser antipático",
+    "date": "2026-09-06",
+    "hora": "20h",
+    "emoji": "✉️",
+    "summary": "Uma régua automática começa com finalidade clara, escolha válida, registro, descadastro fácil e um fluxo que sabe parar.",
+    "tags": [
+      "marketing",
+      "automação",
+      "privacidade",
+      "lgpd"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-06-checklist-antes-de-contratar-ia",
+    "title": "o checklist antes de contratar uma ferramenta de IA",
+    "date": "2026-09-06",
+    "hora": "06h",
+    "emoji": "📋",
+    "summary": "Cinco blocos de perguntas transformam a demonstração de um fornecedor de IA em uma avaliação real de dados, qualidade, segurança, contrato e impacto.",
+    "tags": [
+      "ia",
+      "negócios",
+      "segurança",
+      "governança"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-05-golpe-da-voz-clonada",
+    "title": "o golpe da voz clonada pede pressa; sua defesa pede pausa",
+    "date": "2026-09-05",
+    "hora": "20h",
+    "emoji": "📞",
+    "summary": "Clonagem de voz torna golpes familiares mais convincentes, mas um protocolo simples de pausa e confirmação por outro canal quebra o roteiro.",
+    "tags": [
+      "ia",
+      "segurança",
+      "ética"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-05-passkeys-a-senha-que-nao-e-senha",
+    "title": "passkeys: a senha que não é senha",
+    "date": "2026-09-05",
+    "hora": "06h",
+    "emoji": "🔓",
+    "summary": "Passkeys trocam segredos digitados por chaves criptográficas e tornam o acesso mais simples e resistente a phishing.",
+    "tags": [
+      "segurança",
+      "passkeys",
+      "tecnologia"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-04-seo-para-busca-com-ia",
+    "title": "seo para busca com IA continua começando com gente",
+    "date": "2026-09-04",
+    "hora": "20h",
+    "emoji": "🔎",
+    "summary": "As experiências generativas mudam a busca, mas conteúdo útil, rastreável e feito para uma pergunta real continua sendo o centro do SEO.",
+    "tags": [
+      "seo",
+      "ia",
+      "marketing"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-04-seguranca-minima-para-solo-business",
+    "title": "segurança mínima para quem toca o negócio sozinho",
+    "date": "2026-09-04",
+    "hora": "06h",
+    "emoji": "🔐",
+    "summary": "Contas separadas, MFA, atualizações, backups e um plano de emergência formam um começo realista para proteger um negócio de uma pessoa só.",
+    "tags": [
+      "segurança",
+      "negócios",
+      "privacidade"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-03-decisao-automatizada-pede-porta-de-saida",
+    "title": "decisão automatizada precisa de uma porta de saída",
+    "date": "2026-09-03",
+    "hora": "20h",
+    "emoji": "🚪",
+    "summary": "Quando uma automação afeta pessoas, explicação, contestação e revisão humana precisam existir como requisitos de produto.",
+    "tags": [
+      "ia",
+      "lgpd",
+      "ética"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-03-lgpd-para-negocio-pequeno",
+    "title": "LGPD para negócio pequeno: comece pelo mapa, não pelo susto",
+    "date": "2026-09-03",
+    "hora": "06h",
+    "emoji": "🗂️",
+    "summary": "Um mapa simples de dados, acessos e responsabilidades para pequenos negócios começarem a organizar a privacidade sem juridiquês cenográfico.",
+    "tags": [
+      "lgpd",
+      "privacidade",
+      "negócios"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-02-alfabetizacao-em-ia-na-pratica",
+    "title": "alfabetização em IA é saber quando não apertar o botão",
+    "date": "2026-09-02",
+    "hora": "20h",
+    "emoji": "🎓",
+    "summary": "Treinar uma equipe para IA vai além de prompts: envolve dados, contexto, limites, incidentes e decisões que não devem ser delegadas.",
+    "tags": [
+      "ia",
+      "educação",
+      "regulação"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-02-burnout-nao-e-badge-de-produtividade",
+    "title": "burnout não é badge de produtividade",
+    "date": "2026-09-02",
+    "hora": "06h",
+    "emoji": "🪫",
+    "summary": "A definição da OMS ajuda a separar burnout de cansaço genérico — e a lembrar que aplicativo nenhum conserta sozinho um trabalho mal desenhado.",
+    "tags": [
+      "saúde mental",
+      "trabalho",
+      "tecnologia"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-01-publipost-com-ia-e-transparencia",
+    "title": "publipost com IA: transparência cabe antes do “ver mais”",
+    "date": "2026-09-01",
+    "hora": "20h",
+    "emoji": "📣",
+    "summary": "Um guia direto para informar parcerias, brindes e comissões com clareza — mesmo quando a legenda ganhou ajuda de IA.",
+    "tags": [
+      "marketing",
+      "ética",
+      "publicidade"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-09-01-seo-com-ia-sem-fabrica-de-texto",
+    "title": "seo com IA sem virar uma fábrica de texto esquecível",
+    "date": "2026-09-01",
+    "hora": "06h",
+    "emoji": "🏭",
+    "summary": "Como usar IA no conteúdo sem cair na produção em escala que repete palavras, ocupa o índice e não resolve a dúvida de ninguém.",
+    "tags": [
+      "seo",
+      "marketing",
+      "ia"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-08-31-prompt-injection-sem-magia",
+    "title": "prompt injection: quando a IA obedece ao bilhete errado",
+    "date": "2026-08-31",
+    "hora": "20h",
+    "emoji": "🧨",
+    "summary": "Prompt injection não se resolve com uma frase mágica: exige privilégios mínimos, validação, testes e aprovação humana nas ações sensíveis.",
+    "tags": [
+      "ia",
+      "segurança",
+      "agentes"
+    ],
+    "verificado": true
+  },
+  {
+    "slug": "2026-08-31-mapa-de-risco-para-ia",
+    "title": "um mapa de risco para usar IA sem depender de sorte",
+    "date": "2026-08-31",
+    "hora": "06h",
+    "emoji": "🗺️",
+    "summary": "Um roteiro prático inspirado no NIST para mapear, medir, governar e administrar riscos antes de colocar uma automação com IA para trabalhar.",
+    "tags": [
+      "ia",
+      "risco",
+      "governança"
+    ],
+    "verificado": true
+  },
+  {
     "slug": "2026-07-17-kimi-k3-o-maior-modelo-aberto-ja-lancado",
     "title": "kimi k3: o maior modelo aberto já lançado (e o susto que ele deu no mercado)",
     "date": "2026-07-17",
     "hora": "20h",
     "emoji": "🐉",
     "summary": "A Moonshot AI lançou o Kimi K3, apresentado como o maior modelo de peso aberto já feito, com 2,8 trilhões de parâmetros — e derrubou ações de chips no mesmo dia.",
-    "tags": ["ia", "modelos abertos", "novidades"],
+    "tags": [
+      "ia",
+      "modelos abertos",
+      "novidades"
+    ],
     "verificado": true
   },
   {
@@ -16,7 +512,11 @@
     "hora": "13h",
     "emoji": "🏷️",
     "summary": "A partir de 2 de agosto de 2026, o artigo 50 do AI Act europeu exige rotular deepfakes e conteúdo gerado por IA — com uma exceção para quem tem responsabilidade editorial humana.",
-    "tags": ["ética", "regulação", "marketing"],
+    "tags": [
+      "ética",
+      "regulação",
+      "marketing"
+    ],
     "verificado": true
   },
   {
@@ -26,7 +526,11 @@
     "hora": "06h",
     "emoji": "🎯",
     "summary": "A Anthropic lançou o Claude Sonnet 5: mais agêntico, padrão dos planos Free e Pro e, em alguns casos, no nível do Opus 4.8 — com preço promocional só até 31 de agosto.",
-    "tags": ["ia", "modelos", "novidades"],
+    "tags": [
+      "ia",
+      "modelos",
+      "novidades"
+    ],
     "verificado": true
   },
   {
@@ -36,7 +540,12 @@
     "hora": "06h",
     "emoji": "🛑",
     "summary": "Automação editorial responsável não é só publicar no horário: é pesquisar, verificar e saber interromper a edição quando as evidências não bastam.",
-    "tags": ["automação", "ia", "ética", "bastidores"],
+    "tags": [
+      "automação",
+      "ia",
+      "ética",
+      "bastidores"
+    ],
     "verificado": true
   },
   {
@@ -46,7 +555,11 @@
     "hora": "manual",
     "emoji": "👾",
     "summary": "O manifesto de fundação do ProgramaDora: o trocadilho, o plano das publicações automáticas às 6h e às 20h, e a promessa da dupla verificação por IA.",
-    "tags": ["meta", "automações", "ia"],
+    "tags": [
+      "meta",
+      "automações",
+      "ia"
+    ],
     "verificado": false
   },
   {
@@ -56,7 +569,11 @@
     "hora": "manual",
     "emoji": "🤖",
     "summary": "Todo mundo fala em \"agentes\", mas o que separa um chatbot de um agente de verdade? Uma explicação honesta, com exemplos — inclusive o robô que escreve este blog.",
-    "tags": ["ia", "agentes", "conceitos"],
+    "tags": [
+      "ia",
+      "agentes",
+      "conceitos"
+    ],
     "verificado": false
   },
   {
@@ -66,7 +583,11 @@
     "hora": "manual",
     "emoji": "⚖️",
     "summary": "Se um post automático deste blog publicar uma bobagem, a culpa é minha, da IA ou de ninguém? O dilema da responsabilidade — e por que este blog verifica tudo duas vezes.",
-    "tags": ["ética", "ia", "responsabilidade"],
+    "tags": [
+      "ética",
+      "ia",
+      "responsabilidade"
+    ],
     "verificado": false
   }
 ]
